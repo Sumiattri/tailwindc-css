@@ -24,8 +24,7 @@ function Card() {
   }
   return (
     <>
-      <div className="flex flex-col justify-center items-center max-w-lg min-w-[250px] mx-4 sm:mx-auto  px-10 py-6 sm:p-10 mt-5 bg-slate-600 rounded-2xl ">
-        {" "}
+      <div className="flex flex-col justify-center items-center  max-w-lg min-w-[200px]  mx-12 sm:mx-auto  px-10 py-10 sm:p-10 mt-5 bg-slate-600 rounded-2xl ">
         {showPapa && <Papa />}
         {showMammi && <Mammi />}
         <button
