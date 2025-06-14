@@ -1,14 +1,20 @@
 import image from "../assets/image.png";
+import { motion } from "framer-motion";
 
 function Content() {
   return (
     <>
       <div className="h-[calc(100vh-72px)] w-screen  flex flex-col sm:flex-row ">
         <div className="w-screen sm:w-[50%] pt-15 pl-10">
-          <h1 className="text-5xl font-semibold leading-tight">
+          <motion.h1
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 3, ease: "easeOut" }}
+            className="text-5xl font-semibold leading-tight"
+          >
             Learn from the <span className="text-[#ca5560]">coolest</span>{" "}
             coding platform of <br /> India
-          </h1>
+          </motion.h1>
           <p className="md:max-w-[450px] max-w-[400px]">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error
             natus odit illo ut neque non eius at ad molestiae odio accusamus aut
