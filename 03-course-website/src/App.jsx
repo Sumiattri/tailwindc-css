@@ -1,7 +1,11 @@
-import React from "react";
+import Body_Website from "./components/Body_Website";
 
 function App() {
-  return <div>App</div>;
+  return (
+    <>
+      <Body_Website />
+    </>
+  );
 }
 
 export default App;
